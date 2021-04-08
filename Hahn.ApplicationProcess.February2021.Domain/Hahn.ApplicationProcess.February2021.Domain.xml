@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hahn.ApplicationProcess.February2021.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation">
+            <summary>
+            Asset business implementation
+            </summary>
+            <seealso cref="T:Hahn.ApplicationProcess.February2021.Domain.Interfaces.IAssetBusinessInformation" />
+        </member>
+        <member name="F:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation.unitOfWork">
+            <summary>
+            The unit of work
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation.#ctor(Hahn.ApplicationProcess.February2021.Data.Interfaces.IUnitOfWork)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation" /> class.
+            </summary>
+            <param name="unitOfWork">The unit of work.</param>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation.DeleteAsset(System.Int32)">
+            <summary>
+            Deletes the asset.
+            </summary>
+            <param name="Id">The identifier.</param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation.GetAsset(System.Int32)">
+            <summary>
+            Gets the asset.
+            </summary>
+            <param name="Id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation.CreateAsset(Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel)">
+            <summary>
+            Creates the asset.
+            </summary>
+            <param name="assetModel">The asset model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation.UpdateAsset(Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel)">
+            <summary>
+            Updates the asset.
+            </summary>
+            <param name="assetModel">The asset model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation.ConvertDataToModel(Hahn.ApplicationProcess.February2021.Data.DatabaseModels.Asset)">
+            <summary>
+            Converts the data to model.
+            </summary>
+            <param name="assetData">The asset data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation.ConvertDataToModel(System.Collections.Generic.List{Hahn.ApplicationProcess.February2021.Data.DatabaseModels.Asset})">
+            <summary>
+            Converts the data to model.
+            </summary>
+            <param name="assetData">The asset data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.BusinessImplementation.AssetBusinessImplementation.ConvertModelToData(Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel)">
+            <summary>
+            Converts the model to data.
+            </summary>
+            <param name="assetModel">The asset model.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+            <example>1</example>
+        </member>
+        <member name="P:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel.AssetName">
+            <summary>
+            Gets or sets the name of the asset.
+            </summary>
+            <value>
+            The name of the asset.
+            </value>
+            <example>Some Asset</example>
+        </member>
+        <member name="P:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel.Department">
+            <summary>
+            Gets or sets the department.
+            </summary>
+            <value>
+            The department.
+            </value>
+        </member>
+        <member name="P:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel.CountryOfDepartment">
+            <summary>
+            Gets or sets the country of department.
+            </summary>
+            <value>
+            The country of department.
+            </value>
+        </member>
+        <member name="P:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel.EMailAddressOfDepartment">
+            <summary>
+            Gets or sets the e mail address of department.
+            </summary>
+            <value>
+            The e mail address of department.
+            </value>
+        </member>
+        <member name="P:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel.PurchaseDate">
+            <summary>
+            Gets or sets the purchase date.
+            </summary>
+            <value>
+            The purchase date.
+            </value>
+        </member>
+        <member name="P:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel.Broken">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel"/> is broken.
+            </summary>
+            <value>
+              <c>true</c> if broken; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.Department">
+            <summary>
+            Department enum
+            </summary>
+        </member>
+        <member name="F:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.Department.HQ">
+            <summary>
+            The hq
+            </summary>
+        </member>
+        <member name="F:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.Department.Store1">
+            <summary>
+            The store1
+            </summary>
+        </member>
+        <member name="F:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.Department.Store2">
+            <summary>
+            The store2
+            </summary>
+        </member>
+        <member name="F:Hahn.ApplicationProcess.February2021.Domain.BusinessModels.Department.MaintenanceStation">
+            <summary>
+            The maintenance station
+            </summary>
+        </member>
+        <member name="T:Hahn.ApplicationProcess.February2021.Domain.Interfaces.IAssetBusinessInformation">
+            <summary>
+            Asset business interface
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.Interfaces.IAssetBusinessInformation.CreateAsset(Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel)">
+            <summary>
+            Creates the asset.
+            </summary>
+            <param name="assetModel">The asset model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.Interfaces.IAssetBusinessInformation.UpdateAsset(Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel)">
+            <summary>
+            Updates the asset.
+            </summary>
+            <param name="assetModel">The asset model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.Interfaces.IAssetBusinessInformation.GetAsset(System.Int32)">
+            <summary>
+            Gets the asset.
+            </summary>
+            <param name="Id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.Interfaces.IAssetBusinessInformation.DeleteAsset(System.Int32)">
+            <summary>
+            Deletes the asset.
+            </summary>
+            <param name="Id">The identifier.</param>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.Interfaces.IAssetBusinessInformation.GetAllAsset">
+            <summary>
+            Gets all asset.
+            </summary>
+        </member>
+        <member name="T:Hahn.ApplicationProcess.February2021.Domain.Validators.AssetValidator">
+            <summary>
+            Asset Validator
+            </summary>
+            <seealso cref="!:FluentValidation.AbstractValidator&lt;Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel&gt;" />
+        </member>
+        <member name="F:Hahn.ApplicationProcess.February2021.Domain.Validators.AssetValidator.httpClient">
+            <summary>
+            The HTTP client
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Domain.Validators.AssetValidator.#ctor(Hahn.ApplicationProcess.February2021.Data.Interfaces.ICountryValidator)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hahn.ApplicationProcess.February2021.Domain.Validators.AssetValidator"/> class.
+            </summary>
+            <param name="httpClient">The HTTP client.</param>
+        </member>
+    </members>
+</doc>

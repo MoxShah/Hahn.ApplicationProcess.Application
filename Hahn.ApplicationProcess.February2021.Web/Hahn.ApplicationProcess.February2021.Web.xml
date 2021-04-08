@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hahn.ApplicationProcess.February2021.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Hahn.ApplicationProcess.February2021.Web.Controllers.AssetController">
+            <summary>
+            Asset Controller
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.ControllerBase" />
+        </member>
+        <member name="F:Hahn.ApplicationProcess.February2021.Web.Controllers.AssetController.assetBusinessInformation">
+            <summary>
+            The asset business information
+            </summary>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Web.Controllers.AssetController.#ctor(Hahn.ApplicationProcess.February2021.Domain.Interfaces.IAssetBusinessInformation)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hahn.ApplicationProcess.February2021.Web.Controllers.AssetController"/> class.
+            </summary>
+            <param name="assetBusinessInformation">The asset business information.</param>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Web.Controllers.AssetController.CreateAsset(Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel)">
+            <summary>
+            Creates the asset.
+            </summary>
+            <param name="assetModel">The asset model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Web.Controllers.AssetController.UpdateAsset(Hahn.ApplicationProcess.February2021.Domain.BusinessModels.AssetModel)">
+            <summary>
+            Updates the asset.
+            </summary>
+            <param name="assetModel">The asset model.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Web.Controllers.AssetController.GetAsset(System.Int32)">
+            <summary>
+            Gets the asset.
+            </summary>
+            <param name="Id" example="1">The asset identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Web.Controllers.AssetController.GetAllAsset">
+            <summary>
+            Gets all asset.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hahn.ApplicationProcess.February2021.Web.Controllers.AssetController.DeleteAsset(System.Int32)">
+            <summary>
+            Deletes the asset.
+            </summary>
+            <param name="Id" example="1">The asset identifier.</param>
+        </member>
+        <member name="T:WebApplication1.Startup">
+            <summary>
+            Start up
+            </summary>
+        </member>
+        <member name="M:WebApplication1.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WebApplication1.Startup"/> class.
+            </summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="P:WebApplication1.Startup.Configuration">
+            <summary>
+            Gets the configuration.
+            </summary>
+            <value>
+            The configuration.
+            </value>
+        </member>
+        <member name="M:WebApplication1.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the services.
+            </summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:WebApplication1.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configures the specified application.
+            </summary>
+            <param name="app">The application.</param>
+            <param name="env">The env.</param>
+        </member>
+    </members>
+</doc>

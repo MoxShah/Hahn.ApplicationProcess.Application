@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  hahnappv1:
+    image: moxshah/hahnappv1
+    build:
+      context: ./
+      dockerfile: Dockerfile
