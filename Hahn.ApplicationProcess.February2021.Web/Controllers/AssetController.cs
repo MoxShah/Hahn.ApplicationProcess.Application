@@ -4,7 +4,6 @@
     using Hahn.ApplicationProcess.February2021.Domain.BusinessModels;
     using Hahn.ApplicationProcess.February2021.Domain.Interfaces;
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Extensions.Logging;
 
     /// <summary>
     /// Asset Controller

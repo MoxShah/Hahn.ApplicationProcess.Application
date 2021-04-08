@@ -3,7 +3,7 @@
     using System;
 
     /// <summary>
-    /// 
+    /// Asset business model
     /// </summary>
     public class AssetModel
     {
